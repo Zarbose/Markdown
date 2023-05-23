@@ -14,7 +14,8 @@ sudo apt install nfs-common
 **Serveur**
 - exports : permet de définir les répertoires que l’on souhaite rendre accessible au travers d’NFS, ainsi que la liste des IP pouvant monter ces répertoires (et donc accéder aux fichiers). On peut également spécifier des options de montages. 
 - hosts.allow : définit la liste des hôtes autorisés à accéder aux services spécifiés. 
-- hosts.deny : définit la liste des hôtes explicitement non autorisés à accéder aux services spécifiés. 
+- hosts.deny : définit la liste des hôtes explicitement non autorisés à accéder aux services spécifiés.
+
 **Client**
 - fstab : permet de définir des règles de montages permanentes pour les espaces de stockage
 
