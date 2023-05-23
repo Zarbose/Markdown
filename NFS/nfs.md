@@ -1,11 +1,12 @@
 # NFS
 
 ### Outils à installer
-Sur le serveur : 
+**Serveur**
 ```bash
 sudo apt install nfs-kernel-server
 ```
-Sur le client :
+
+**Client**
 ```bash
 sudo apt install nfs-common
 ```
