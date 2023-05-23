@@ -29,7 +29,7 @@ docker image rm python:2.7
 docker image tag ubuntu monimage:montag
 ```
 
-### Les commandes network de base
+### Les commandes network de base
 ``` bash 
 docker network ls
 network create simon # créer un réseau simon
@@ -40,12 +40,13 @@ docker run -ti -p7778:7777 --network simon --name simonPython python:2 python -m
 # --name ==> on choisit le nom du container
 ```
 
-### Les commandes de gestion des volumes
+### Les commandes de gestion des volumes
 ``` bash
 docker volume create monvolume
 docker volume ls
 docker run -ti --name alice --volume monvolume:/tmp/projet ubuntu bash
 ```
+
 
 ## Docker file
 ``` bash
@@ -77,6 +78,7 @@ docker tag simplhttp zarbose/simplhttp
 docker push zarbose/simplhttp
 ```
 <https://hub.docker.com/_/registry>  ==> lien utils
+
 
 ## Docker compose
 Un exemple : 
