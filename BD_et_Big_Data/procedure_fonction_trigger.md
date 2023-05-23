@@ -45,7 +45,7 @@ Quelque commande sur les procédures :
 SHOW PROCEDURE STATUS;
 DROP PROCEDURE virement;
 ```
-
+Plus d'info sur la page de [documentation](https://mariadb.com/kb/en/stored-procedure-overview/) (23.05.2023)
 #### Test de la procédure ```virement```  
 **Avant**
 ```sql
@@ -103,6 +103,7 @@ Quelque commande sur les trigger :
 SHOW triggers;
 DROP TRIGGER save_mouvement;
 ```
+Plus d'info sur la page de [documentation](https://mariadb.com/kb/en/trigger-overview/) (23.05.2023)
 
 #### Test du trigger ```save_mouvement```
 On effectue un nouveau virement : 
