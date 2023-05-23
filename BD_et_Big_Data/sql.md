@@ -1,6 +1,6 @@
 # BD et Big Data
 
-Document qui rasemble les commandes sql les plus courantes : [Documentation](https://sql.sh/)
+Document qui rasemble les commandes sql les plus courantes : [Documentation](https://sql.sh/) (23.05.2023)
 
 ### SELECT et FROM
 ```sql
