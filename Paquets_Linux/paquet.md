@@ -95,6 +95,7 @@ sudo dpkg -i serpentin.deb
 
 Résultat de la commande tree a l'endroit ou je me trouve :
 ![Serpentin](/Paquets_Linux/images/serpentin.png)
+
 Dans ```serpentin/usr/bin``` on trouve un fichier exécutable ```serpentin```
 
 Après installation si on tape dans l’invite de commande : 
