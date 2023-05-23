@@ -54,10 +54,14 @@ Dans le fichier ```/etc/exports``` :
 /tmp/NFS 127.0.0.1(rw)
 ```
 Pour start le service cotée serveur : 
-```systemctl start nfs-kernel-server.service```
+```bash
+systemctl start nfs-kernel-server.service
+```
 
 Pour stop le service cotée serveur : 
-```systemctl stop nfs-kernel-server.service```
+```bash
+systemctl stop nfs-kernel-server.service
+```
 
 **Client**
 
