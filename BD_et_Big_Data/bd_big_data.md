@@ -76,3 +76,48 @@ MariaDB [banque]> select * from Account;
 +----+----------+-------+
 3 rows in set (0,001 sec)
 ```
+
+### Trigger
+On rajoute une table : 
+```sql
+CREATE TABLE Movement(
+    id int auto_increment primary key,
+	LastName varchar(255),
+	valeur int
+);
+```
+
+On crée le trigger : 
+```sql
+DELIMITER $
+CREATE TRIGGER save_mouvement BEFORE UPDATE
+ON Account FOR EACH ROW
+BEGIN
+    INSERT INTO Movement (LastName,valeur) Values(OLD.LastName,NEW.Solde-OLD.Solde);
+END $
+DELIMITER ;
+```
+
+Quelque commande sur les trigger :
+```sql
+SHOW triggers;
+DROP TRIGGER save_mouvement;
+```
+
+#### Test du trigger ```save_mouvement```
+On effectue un nouveau virement : 
+```sql
+CALL virement("Simon","Heloise",10);
+```
+
+On observe la table ```Movement``` qui contient les action du trigger : 
+```sql
+MariaDB [banque]> select * from Movement;
++----+----------+--------+
+| id | LastName | valeur |
++----+----------+--------+
+|  1 | Simon    |    -10 |
+|  2 | Heloise  |     10 |
++----+----------+--------+
+2 rows in set (0,001 sec)
+```
