@@ -9,6 +9,8 @@ Ce repository a pour but de centraliser tous les documents que j'ai produit pend
   - [Transaction et niveaux d'isolation](/BD_Big_Data/transaction.md)
 - [Docker](/Docker/docker.md)
 - [Git](/Git/git.md)
+  - [Les bases](/Git/git.md)
+  - [La nomenclature des commits](/Git/commit.md)
 - [NFS](/NFS/nfs.md)
 - [Paquets Linux](/Paquets_Linux/paquet.md)
 - [VirtualBox](/VirtualBox/debian.md)
