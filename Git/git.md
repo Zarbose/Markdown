@@ -14,13 +14,13 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:Zarbose/<A changer>.git
+git remote add origin git@github.com:Zarbose/<nom-repertoire>.git
 git push -u origin main
 ```
 
 ### Push un repository déjà existant
 ```bash
-git remote add origin git@github.com:Zarbose/<A changer>.git
+git remote add origin git@github.com:Zarbose/<nom-repertoire>.git
 git branch -M main
 git push -u origin main
 ```
