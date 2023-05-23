@@ -47,6 +47,7 @@ Explication des options de partage dans ```/etc/exports``` :
 
 ### Exemple
 **Serveur**
+
 Dans le fichier ```/etc/exports``` : 
 ```
 /tmp/NFS 127.0.0.1(rw)
@@ -58,6 +59,7 @@ Pour stop le service cotée serveur :
 ```systemctl stop nfs-kernel-server.service```
 
 **Client**
+
 Pour mount : 
 ```bash
 sudo mount -t nfs 127.0.0.1:/tmp/NFS /media/NFS
