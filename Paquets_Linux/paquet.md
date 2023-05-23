@@ -21,7 +21,7 @@ nom_du_paquet/
 ```
 
 ### Les fichiers en détails
-Le fichier ```control``` (un saut de ligne est nécessaire en fin de fichier) :
+Le fichier ```nom_du_paquet/DEBIAN/control``` (un saut de ligne est nécessaire en fin de fichier) :
 ```
 Package: mon_du_paquet
 Version: 1.0
@@ -33,26 +33,26 @@ Maintainer: Simon Pieto
 Description: Affiche le  message dans /etc/mon_fichier_de_conf
 ```
 
-Le script ```postinst``` (nécessite les droits d’exécution) : 
+Le script ```nom_du_paquet/DEBIAN/postinst``` (nécessite les droits d’exécution) : 
 ```bash
 #!/bin/bash
 
 echo "Installation réussie !! "
 ```
 
-Le script ```postrm``` (nécessite les droits d’exécution) :
+Le script ```nom_du_paquet/DEBIAN/postrm``` (nécessite les droits d’exécution) :
 ```bashs
 #!/bin/bash
 
 echo "Au revoir :("
 ```
 
-Le fichier ```mon_fichier_de_conf``` :
+Le fichier ```nom_du_paquet/etc/mon_fichier_de_conf``` :
 ```
 Les serpentins sont des ZINZINS
 ```
 
-Le programme ```mon_progamme``` :
+Le programme ```nom_du_paquet/usr/bin/mon_progamme``` :
 ```bash
 #!/bin/bash
 
