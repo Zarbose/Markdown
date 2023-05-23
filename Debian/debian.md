@@ -30,6 +30,7 @@ ssh-keygen -R [localhost]:2200 # Windows
 ### Montage d'un volume
 Voicie quelque exemples :
 ```bash
+mkdir /home/simon/partage # sur la vm
 sudo mount -t vboxsf vm /home/simon/partage
 sudo mount -t vboxsf code_leo /home/simon/partage
 sudo mount -t vboxsf root_me /home/simon/partage
@@ -63,6 +64,9 @@ usermod -aG sudo mon_user
 sudo apt install tree
 sudo apt install tldr
 tldr -u
+```
+Les alias : 
+```bash
 touch .bash_aliases
 nano .bash_aliases
 alias ll='ls -alh'
