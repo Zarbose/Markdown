@@ -121,3 +121,17 @@ MariaDB [banque]> select * from Movement;
 +----+----------+--------+
 2 rows in set (0,001 sec)
 ```
+
+#### Exemple de trigger
+Le trigger suivant empêche un virement si le compte devient négatif : 
+```sql
+DELIMITER $
+CREATE TRIGGER test_negatif BEFORE UPDATE
+ON Account FOR EACH ROW
+BEGIN
+    IF NEW.Solde < 0 THEN
+        signal sqlstate '45000' set message_text = 'Le compte devient négatif';
+    END IF;
+END $
+DELIMITER ;
+```
