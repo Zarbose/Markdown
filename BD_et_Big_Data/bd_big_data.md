@@ -1,4 +1,4 @@
-# DB et Big Data
+# DB et Big Data (Procédures, fonctions, trigger)
 
 ### Installation
 ```bash
@@ -12,9 +12,7 @@ create database banque;
 use banque;
 ```
 
-### Procédures, fonctions, trigger
-
-#### Procédure
+### Procédure
 Création d'une table de test : 
 ```sql
 CREATE TABLE Account(
@@ -48,7 +46,7 @@ SHOW PROCEDURE STATUS;
 DROP PROCEDURE virement;
 ```
 
-##### Test de la procédure ```virement```  
+#### Test de la procédure ```virement```  
 **Avant**
 ```sql
 MariaDB [banque]> select * from Account;
