@@ -1,6 +1,6 @@
-### Docker
+# Docker
 
-**Commandes de base des container**
+### Commandes de base des container
 ``` bash
 docker ps -a
 docker run hello-world
@@ -13,7 +13,7 @@ docker run -ti -p7777:7777 python:2 python -m SimpleHTTPServer 7777
 # -p7777:7777 = redirection du port 7777 de la carte réseau du pc vers le port 7777 de la carte réseau virtuel du container
 ```
 
-**Arrière plan**
+### Arrière plan
 ``` bash
 # On démare un container
 docker run -p7777:7777 -d python:2 python -m SimpleHTTPServer 7777
@@ -22,14 +22,14 @@ docker run -d --name carol ubuntu tail -f  # Tourne à l'infini
 docker exec -ti carol bash # Rxécucte "bash" dans "carol"
 ```
 
-**Commandes de base des images**
+### Commandes de base des images
 ``` bash
 docker image ls
 docker image rm python:2.7
 docker image tag ubuntu monimage:montag
 ```
 
-**Les commandes network de base**
+### Les commandes network de base
 ``` bash 
 docker network ls
 network create simon # créer un réseau simon
@@ -40,14 +40,14 @@ docker run -ti -p7778:7777 --network simon --name simonPython python:2 python -m
 # --name ==> on choisit le nom du container
 ```
 
-**Les commandes de gestion des volumes**
+### Les commandes de gestion des volumes
 ``` bash
 docker volume create monvolume
 docker volume ls
 docker run -ti --name alice --volume monvolume:/tmp/projet ubuntu bash
 ```
 
-### Docker file
+## Docker file
 ``` bash
 FROM ubuntu
 
@@ -64,13 +64,13 @@ Explication des mots clé :
 - WORKDIR ==> l'endroit ou le docker démarre par défaut c'est dans /
 - EXPOSE ==> pour dire qu'on va lancer un service sur le port 7777 (c'est plus de la doc mais faut le faire)
 
-**Utilisation d'un dockerfile**
+### Utilisation d'un dockerfile
 ``` bash
 docker build -t ubuntuperso -f file.Dockerfile . # Crée l'image ubuntuperso
 docker run -ti ubuntuperso
 ```
 
-**Upload une image en ligne**
+### Upload une image en ligne
 ``` bash
 docker login
 docker tag simplhttp zarbose/simplhttp
@@ -78,7 +78,7 @@ docker push zarbose/simplhttp
 ```
 <https://hub.docker.com/_/registry>  ==> lien utils
 
-### Docker compose
+## Docker compose
 Un exemple : 
 ``` yml
 version: "3.9"
