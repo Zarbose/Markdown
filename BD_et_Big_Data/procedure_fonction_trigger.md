@@ -1,11 +1,11 @@
 # DB et Big Data (Procédures, fonctions, trigger)
 
-### Installation
+### Installation (MariaDB)
 ```bash
 sudo apt install mariadb-server
 ```
 
-### Initialisation (MariaDB)
+### Initialisation
 ```bash
 sudo mysql
 create database banque;
