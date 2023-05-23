@@ -1,6 +1,6 @@
 # Markdown
 
-Ce repository a pour but de centraliser tous les documents que j'ai produit pendant mon master.
+Ce répertoire a pour but de centraliser tous les documents que j'ai produits pendant mon master.
 
 ### Sommaire
 - [Base de données et Big Data](/BD_Big_Data)
