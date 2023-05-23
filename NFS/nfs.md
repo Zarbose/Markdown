@@ -36,16 +36,16 @@ Format d’une ligne dans ```/etc/exports``` :
 ```
 
 Explication des options de partage dans ```/etc/exports``` : 
-- rw : permet la lecture et l'écriture sur un partage pour l'hôte défini (par défaut, les partages sont en mode ro; c'est-à-dire en lecture seule).
-- async : permet au serveur NFS de violer le protocole NFS et de répondre aux requêtes avant que les changements effectués par la requête aient été appliqués sur l'unité de stockage. Cette option améliore les performances mais a un coût au niveau de l'intégrité des données (données corrompues ou perdues) en cas de redémarrage non-propre (par exemple en cas de crash système).
-- sync : est le contraire de async. Le serveur NFS respecte le protocole NFS.
-- root_squash : force le mapping de l'utilisateur root vers l'utilisateur anonyme (option par défaut).
-- no_root_squash : n'effectue pas de mapping pour l'utilisateur root.
-- all_squash : force le mapping de tous les utilisateurs vers l'utilisateur anonyme.
-- anonuid : indique au serveur NFS l'UID de l'utilisateur anonyme (considéré comme tel dans les précédentes options de mapping).
-- anongid : indique au serveur NFS le GID de l'utilisateur anonyme (considéré comme tel dans les précédentes options de mapping).
-- subtree_check : Si un sous-répertoire dans un système de fichiers est partagé, mais que le système de fichiers ne l'est pas, alors chaque fois qu'une requête NFS arrive, le serveur doit non seulement vérifier que le fichier accédé est dans le système de fichiers approprié (ce qui est facile), mais aussi qu'il est dans l'arborescence partagée (ce qui est plus compliqué). Cette vérification s'appelle subtree_check.
-- no_subtree_check : Cette option neutralise la vérification de sous-répertoires, ce qui a des subtiles implications au niveau de la sécurité, mais peut améliorer la fiabilité dans certains cas.
+- ```rw``` : permet la lecture et l'écriture sur un partage pour l'hôte défini (par défaut, les partages sont en mode ro; c'est-à-dire en lecture seule).
+- ```async``` : permet au serveur NFS de violer le protocole NFS et de répondre aux requêtes avant que les changements effectués par la requête aient été appliqués sur l'unité de stockage. Cette option améliore les performances mais a un coût au niveau de l'intégrité des données (données corrompues ou perdues) en cas de redémarrage non-propre (par exemple en cas de crash système).
+- ```sync``` : est le contraire de async. Le serveur NFS respecte le protocole NFS.
+- ```root_squash``` : force le mapping de l'utilisateur root vers l'utilisateur anonyme (option par défaut).
+- ```no_root_squash``` : n'effectue pas de mapping pour l'utilisateur root.
+- ```all_squash``` : force le mapping de tous les utilisateurs vers l'utilisateur anonyme.
+- ```anonuid``` : indique au serveur NFS l'UID de l'utilisateur anonyme (considéré comme tel dans les précédentes options de mapping).
+- ```anongid``` : indique au serveur NFS le GID de l'utilisateur anonyme (considéré comme tel dans les précédentes options de mapping).
+- ```subtree_check``` : Si un sous-répertoire dans un système de fichiers est partagé, mais que le système de fichiers ne l'est pas, alors chaque fois qu'une requête NFS arrive, le serveur doit non seulement vérifier que le fichier accédé est dans le système de fichiers approprié (ce qui est facile), mais aussi qu'il est dans l'arborescence partagée (ce qui est plus compliqué). Cette vérification s'appelle subtree_check.
+- ```no_subtree_check``` : Cette option neutralise la vérification de sous-répertoires, ce qui a des subtiles implications au niveau de la sécurité, mais peut améliorer la fiabilité dans certains cas.
 
 ### Exemple
 **Serveur**
