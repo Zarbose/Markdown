@@ -46,8 +46,8 @@ docker volume create monvolume
 docker volume ls
 docker run -ti --name alice --volume monvolume:/tmp/projet ubuntu bash
 ```
-
-
+  
+  
 ## Docker file
 ``` bash
 FROM ubuntu
@@ -77,9 +77,8 @@ docker login
 docker tag simplhttp zarbose/simplhttp
 docker push zarbose/simplhttp
 ```
-<https://hub.docker.com/_/registry>  ==> lien utils
-
-
+  
+  
 ## Docker compose
 Un exemple : 
 ``` yml
