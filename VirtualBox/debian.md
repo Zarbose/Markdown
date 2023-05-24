@@ -13,7 +13,7 @@ Plus d'info sur :
 ### SSH
 ```bash
 ssh-keygen # Génération de la clé
-type $env:USERPROFILE\.ssh\id_rsa.pub | ssh <ip-destination> "cat >> .ssh/authorized_keys" # Copie de la clé depuis linux windows
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh <ip-destination> "cat >> .ssh/authorized_keys" # Copie de la clé depuis windows
 ssh-copy-id -i ~/.ssh/mykey user@host # Copie de la clé depuis linux
 ssh -i ~/.ssh/mykey user@host # Test de la clé
 ```
