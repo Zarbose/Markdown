@@ -1,7 +1,6 @@
 # Oh My Zsh
 
 ### Installation
-
 ```bash
 sudo apt install zsh
 zsh --version
@@ -25,3 +24,5 @@ Dans le fichier ```.zshrc``` il faut rajouter entre les parenthéses le nom des 
 ```bash
 plugins=(rails git ruby)
 ```
+
+Pour plus d'information voir la [documentation](https://github.com/ohmyzsh/ohmyzsh/wiki)
