@@ -33,8 +33,6 @@ Voicie quelque exemples :
 ```bash
 mkdir /home/simon/partage # sur la vm
 sudo mount -t vboxsf vm /home/simon/partage
-sudo mount -t vboxsf code_leo /home/simon/partage
-sudo mount -t vboxsf root_me /home/simon/partage
 sudo mount -t vboxsf XML /home/simon/partage
 sudo mount -t vboxsf crypto /home/simon/partage
 ```
