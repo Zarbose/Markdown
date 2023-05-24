@@ -9,7 +9,7 @@ hostname -I # Obtenire son ip
 Plus d'info sur :
 - *<https://medium.com/platform-engineer/port-forwarding-for-ssh-http-on-virtualbox-459277a888be> (23.05.2023)*
 
-Définir la connexion en mode ```pont permet``` de ne pas avoir a rediriger les ports.
+Définir la connexion en mode ```pont``` permet de ne pas avoir a rediriger les ports.
 
 
 ### SSH
