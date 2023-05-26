@@ -12,5 +12,6 @@ Ce répertoire a pour but de centraliser tous les documents que j'ai produits pe
   - [Les bases](/Git/git.md)
   - [La nomenclature des commits](/Git/commit.md)
 - [NFS](/NFS/nfs.md)
+- [Oh my zsh](/ZSH/zsh.md)
 - [Paquets Linux](/Paquets_Linux/paquet.md)
 - [VirtualBox](/VirtualBox/debian.md)
