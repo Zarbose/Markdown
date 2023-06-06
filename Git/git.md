@@ -3,8 +3,8 @@ Page de [Documentation](https://git-scm.com/doc)
 
 ### Identité
 ```bash
-git config --global user.name "Simon Pieto"
-git config --global user.email "simonpieto.pieto@gmail.com"
+git config --global user.name "Username"
+git config --global user.email "mail"
 ```
 
 ### Créarion d'un nouveaux repository
