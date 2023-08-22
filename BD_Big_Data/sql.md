@@ -23,7 +23,7 @@ ALTER TABLE table_name
 ADD column_name datatype;
 ```
 
-### CHECK
+### CREATE
 ```sql
 CREATE TABLE Persons (
     ID int NOT NULL,
