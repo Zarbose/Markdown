@@ -131,7 +131,7 @@ networks:
   python:
   grafana:
 ```
-Lancement compose
+Lancement compose :
 ``` bash
 docker-compose up -d
 ```
