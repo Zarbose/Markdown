@@ -131,3 +131,7 @@ networks:
   python:
   grafana:
 ```
+
+``` bash
+docker-compose up -d
+```
