@@ -1,5 +1,13 @@
 # Docker
 
+### Nettoyage
+```bash
+docker system prune
+docker system prune -a
+docker images purge
+docker rm $(docker ps -a)
+```
+
 ### Commandes de base des container
 ``` bash
 docker ps -a
